@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>صفحة ترويج الأعمال اليدوية - طارات</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>بإيدي وغزلي - منتجات يدوية</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>أعمال يدوية - طارات</h1>
-        <p>مرحباً بكم في صفحة الترويج لأجمل الأعمال اليدوية</p>
+      <div class="header-container">
+        <div class="logo">
+          <h1>بإيدي وغزلي</h1>
+          <p>منتجات يدوية بكل حب واهتمام</p>
+        </div>
+        <nav>
+          <a href="#products">منتجاتنا</a>
+          <a href="#about">من نحن</a>
+          <a href="#contact">تواصل معنا</a>
+        </nav>
+      </div>
     </header>
 
-    <section class="gallery">
-        <h2>معرض الأعمال</h2>
-        <div class="cards">
-            <div class="card">
-                <a href="detials.html">
-                    <img src="img/3تقي.jpg" alt="عمل يدوي 1" />
-                </a>
-                <h3>طارة جميلة 1</h3>
-                <p>وصف مختصر للعمل اليدوي الأول.</p>
-            </div>
-            <div class="card">
-                <a href="detials.html">
-                    <img src="img/دكتور3.jpg" alt="عمل يدوي 2" />
-                </a>
-                <h3>طارة جميلة 2</h3>
-                <p>وصف مختصر للعمل اليدوي الثاني.</p>
-            </div>
-            <div class="card">
-                <a href="detials.html">
-                    <img src="img/زين1.jpg" alt="عمل يدوي 3" />
-                </a>
-                <h3>طارة جميلة 3</h3>
-                <p>وصف مختصر للعمل اليدوي الثالث.</p>
-            </div>
+    <section id="products">
+      <h2>منتجاتنا</h2>
+      <center>
+        <section class="banner">
+          <h2>اصنعي البهجة بلمسة يدوية ✨</h2>
+        </section>
+      </center>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="img/3تقي.jpg" alt="طارة جميلة 1" />
+          <h3>طارة جميلة 1</h3>
+          <p>وصف مختصر للعمل اليدوي الأول.</p>
+          <span>180 جنيه</span>
+          <a href="details.html" class="product-button">عرض التفاصيل</a>
         </div>
+
+        <div class="product-card">
+          <img src="img/دكتور3.jpg" alt="طارة جميلة 2" />
+          <h3>طارة جميلة 2</h3>
+          <p>وصف مختصر للعمل اليدوي الثاني.</p>
+          <span>200 جنيه</span>
+          <a href="details.html" class="product-button">عرض التفاصيل</a>
+        </div>
+
+        <div class="product-card">
+          <img src="img/زين1.jpg" alt="طارة جميلة 3" />
+          <h3>طارة جميلة 3</h3>
+          <p>وصف مختصر للعمل اليدوي الثالث.</p>
+          <span>230 جنيه</span>
+          <a href="details.html" class="product-button">عرض التفاصيل</a>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>حقوق النشر &copy; 2024 جميع الحقوق محفوظة</p>
-    </footer>
-</body>
+    <section id="about">
+      <h2>من نحن</h2>
+      <p>
+        "بإيدي وغزلي" هو مشروع بسيط بدأ بشغف للحِرف اليدوية والكروشيه. كل قطعة
+        بنقدمها معمولة بحب وتفاصيل دقيقة، علشان نوصل لكِ منتج مميز ومختلف.
+      </p>
+    </section>
+    <section id="contact" class="contact-section">
+  <h2>تواصل معنا</h2>
+  <p>يمكنك التواصل معنا عبر:</p>
+  <ul>
+    <li>📞 رقم الهاتف: 0123456789</li>
+    <li>
+      💬 ماسنجر:
+      <a href="https://m.me/yourmessengerlink" target="_blank">اضغط هنا للانضمام</a>
+    </li>
+  </ul>
+</section>
+
+
+   <footer>
+  <div class="footer-content">
+    <p>تم التصميم بواسطة Yasmeen</p>
+    <p>البراند: بإيدي وغزلي</p>
+  </div>
+</footer>
+
+  </body>
 </html>

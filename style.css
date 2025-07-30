@@ -1,291 +1,274 @@
-/* General styles */
+/* إعدادات عامة */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f7f6;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    direction: rtl;
-    text-align: right;
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  color: #333;
+  direction: rtl;
 }
 
+/* الهيدر الجديد */
 header {
-    background-color: #8b5e3c;
-    color: #fff;
-    padding: 20px 10px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.8em;
-    letter-spacing: 1px;
+  background-color: #f7d9d9;
+  padding: 10px 20px;
+  border-bottom: 2px solid #eab2b2;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #a05278;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #7a4c5f;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6c3d5d;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #b35d8d;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #a05278;
 }
 
 header p {
-    font-size: 1.1em;
-    margin-top: 5px;
-    font-weight: normal;
+  margin: 5px 0 15px;
+  font-size: 1.2em;
+  color: #7a4c5f;
 }
 
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6c3d5d;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #b35d8d;
+}
+
+/* بانر */
+.banner {
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.banner h2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+/* المنتجات */
+#products {
+  padding: 40px 20px;
+  background-color: #fff0f5;
+  text-align: center;
+  margin-top: 80px; 
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  color: #b35d8d;
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.product-card span {
+  display: block;
+  margin-top: 10px;
+  color: #4a2f4e;
+  font-weight: bold;
+}
+
+/* قسم من نحن */
+#about {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 100px; 
+}
+
+#about h2 {
+  color: #a05278;
+}
+
+#about p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* معرض الأعمال */
 .gallery {
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 0 15px;
+  padding: 40px 20px;
+  background-color: #fff5f8;
+  text-align: center;
 }
 
 .gallery h2 {
-    font-size: 1.6em;
-    margin-bottom: 20px;
-    color: #6b4c3b;
-    border-bottom: 2px solid #8b5e3c;
-    padding-bottom: 8px;
+  margin-bottom: 30px;
+  color: #a05278;
 }
 
 .cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(139, 94, 60, 0.2);
-    width: calc(33.333% - 13.33px);
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    padding-bottom: 15px;
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(139, 94, 60, 0.4);
+  transform: scale(1.03);
 }
 
 .card img {
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .card h3 {
-    margin: 12px 0 6px 0;
-    color: #8b5e3c;
-    font-size: 1.2em;
+  margin: 10px 0 5px;
+  color: #b35d8d;
 }
 
 .card p {
-    font-size: 0.95em;
-    color: #5a4a3a;
-    padding: 0 10px;
+  padding: 0 10px 10px;
+  font-size: 0.95em;
+  color: #555;
 }
 
+/* الفوتر */
 footer {
-    background-color: #8b5e3c;
-    color: #fff;
-    text-align: center;
-    padding: 15px 10px;
-    margin-top: 40px;
-    font-size: 0.9em;
+  background-color: #f7d9d9;
+  text-align: center;
+  padding: 20px;
+  color: #4a2f4e;
+  margin-top: 100px; 
 }
 
-/* Details page styles */
-.details-container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 15px;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(139, 94, 60, 0.3);
-    direction: rtl;
+footer a {
+  color: #6c3d5d;
+  text-decoration: none;
 }
 
-.details-header {
-    text-align: center;
-    padding: 20px 0;
-    border-bottom: 2px solid #8b5e3c;
-    color: #8b5e3c;
-    font-size: 1.8em;
-    font-weight: bold;
+footer a:hover {
+  text-decoration: underline;
+}
+.contact-section {
+  background-color: #fff4f4;
+  padding: 40px 20px;
+  margin-top: 80px;
+  border-top: 2px dashed #e8b1b1;
+  border-bottom: 2px dashed #e8b1b1;
+  text-align: center;
 }
 
-.details-gallery {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    margin: 20px 0;
+.contact-section h2 {
+  font-size: 1.8em;
+  color: #a05278;
+  margin-bottom: 20px;
 }
 
-.details-gallery img {
-    width: 22%;
-    border-radius: 10px;
-    object-fit: cover;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(139, 94, 60, 0.2);
-    transition: box-shadow 0.3s ease;
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1em;
+  color: #5a3a4c;
 }
 
-.details-gallery img:hover {
-    box-shadow: 0 6px 12px rgba(139, 94, 60, 0.5);
+.contact-section li {
+  margin: 10px 0;
 }
 
-.details-info {
-    padding: 0 15px 20px 15px;
-    font-size: 1.1em;
-    color: #5a4a3a;
+.contact-section a {
+  color: #b35d8d;
+  text-decoration: underline;
 }
 
-.details-info p {
-    margin: 8px 0;
-}
-
-.brand-name {
-    font-weight: bold;
-    color: #8b5e3c;
-    font-size: 1.3em;
-    margin-top: 15px;
-    text-align: center;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .details-gallery {
-        flex-direction: column;
-    }
-
-    .details-gallery img {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-}
-
-/* Details page carousel and layout */
-.details-content {
-    display: flex;
-    gap: 30px;
-    padding: 20px;
-    align-items: flex-start;
-}
-
-.image-carousel {
-    flex: 1;
-    max-width: 450px;
-}
-
-.main-image img {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(139, 94, 60, 0.5);
-    object-fit: cover;
-    height: 500px;
-    cursor: pointer;
-}
-
-/* Modal styles for enlarged image */
-#imageModal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    padding-top: 60px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8);
-}
-
-#imageModal img {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 80%;
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(139, 94, 60, 0.7);
-}
-
-#imageModal .close {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-#imageModal .close:hover {
-    color: #bbb;
-}
-
-.thumbnail-images {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.thumbnail-images img {
-    width: 22%;
-    border-radius: 8px;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-    height: 70px;
-    object-fit: cover;
-    box-shadow: 0 2px 6px rgba(139, 94, 60, 0.2);
-}
-
-.thumbnail-images img.active,
-.thumbnail-images img:hover {
-    opacity: 1;
-    box-shadow: 0 6px 12px rgba(139, 94, 60, 0.5);
-}
-
-.details-info {
-    flex: 1;
-    font-size: 1.2em;
-    color: #5a4a3a;
-    padding-right: 20px;
-    border-right: 2px solid #8b5e3c;
-}
-
-.details-info p {
-    margin: 15px 0;
-    font-weight: bold;
-}
-
-/* Responsive for details page */
-@media (max-width: 768px) {
-    .details-content {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .details-info {
-        border-right: none;
-        padding-right: 0;
-        margin-top: 20px;
-    }
-
-    .thumbnail-images {
-        justify-content: center;
-    }
-
-    .thumbnail-images img {
-        width: 60px;
-        height: 60px;
-        margin: 0 5px;
-    }
-}
