@@ -86,8 +86,6 @@ nav a:hover {
   margin-top: 150px;
 }
 
-
-
 .banner h2 {
   position: absolute;
   bottom: 20px;
@@ -110,19 +108,21 @@ nav a:hover {
 .product-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 
 .product-card {
-  background-color: #ffffff;
-  border: 1px solid #eee;
-  border-radius: 15px;
+  width: 300px;
+  border: 1px solid #ddd;
   padding: 15px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
+
 
 .product-card:hover {
   transform: translateY(-5px);
