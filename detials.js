@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
         currentIndex = (currentIndex + 1) % thumbnails.length;
         thumbnails[currentIndex].click();
-    }, 1500);
+    }, 2000);
 
     // Enlarge image on main image click
     mainImage.addEventListener('click', () => {
