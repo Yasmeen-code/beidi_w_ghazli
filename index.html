@@ -7,6 +7,10 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>بإيدي وغزلي - منتجات يدوية</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -78,43 +82,44 @@
       <div class="product-grid">
         <div class="product-card">
           <img src="img/ميرال_1.jpg" alt="طارة جميلة 4" />
-          <h3>طارة ميرال </h3>
+          <h3>طارة ميرال</h3>
           <a href="detials_8.html" class="product-button">عرض التفاصيل</a>
         </div>
 
         <div class="product-card">
           <img src="img/يحيى_1.jpg" alt="طارة جميلة 5" />
-          <h3>طارة يجيى </h3>
+          <h3>طارة يجيى</h3>
           <a href="detials_7.html" class="product-button">عرض التفاصيل</a>
         </div>
 
         <div class="product-card">
           <img src="img/زينب_1.jpg" alt="طارة جميلة 6" />
-          <h3>طارة زينب </h3>
+          <h3>طارة زينب</h3>
           <a href="detials_11.html" class="product-button">عرض التفاصيل</a>
         </div>
       </div>
 
       <!-- الصف الرابع -->
-       <div class="product-grid">
+      <div class="product-grid">
         <div class="product-card">
           <img src="img/فاطمة_1.jpg" alt="طارة جميلة 4" />
-          <h3>طارة فاطمة </h3>
+          <h3>طارة فاطمة</h3>
           <a href="detials_9.html" class="product-button">عرض التفاصيل</a>
         </div>
 
         <div class="product-card">
           <img src="img/محمد_1.jpg" alt="طارة جميلة 5" />
-          <h3>طارة محمد </h3>
+          <h3>طارة محمد</h3>
           <a href="detials_10.html" class="product-button">عرض التفاصيل</a>
         </div>
       </div>
-
     </section>
 
     <div class="scroll-buttons">
       <button id="scrollTopBtn" aria-label="Scroll to top">&#9650;</button>
-      <button id="scrollBottomBtn" aria-label="Scroll to bottom">&#9660;</button>
+      <button id="scrollBottomBtn" aria-label="Scroll to bottom">
+        &#9660;
+      </button>
     </div>
 
     <section id="about">
@@ -145,19 +150,23 @@
         <p>تم التصميم بواسطة Yasmeen</p>
         <p>البراند: بإيدي وغزلي</p>
       </div>
-  </footer>
-  <script>document.addEventListener('DOMContentLoaded', function () {
-  const scrollTopBtn = document.getElementById('scrollTopBtn');
-  const scrollBottomBtn = document.getElementById('scrollBottomBtn');
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        const scrollBottomBtn = document.getElementById("scrollBottomBtn");
 
-  scrollTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+        scrollTopBtn.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
 
-  scrollBottomBtn.addEventListener('click', () => {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-  });
-});
-</script>
+        scrollBottomBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
   </body>
 </html>
