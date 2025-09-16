@@ -52,10 +52,12 @@ body::before {
 
 /* هيدر صغير */
 header.small-header {
-  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  background: var(--dark-bg);
+  backdrop-filter: blur(var(--blur-strength));
+  -webkit-backdrop-filter: blur(var(--blur-strength));
   padding: 20px 30px;
   text-align: center;
-  border-bottom: 3px solid #d4af37;
+  border-bottom: 3px solid var(--primary-gold);
   box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
 }
 
@@ -195,10 +197,12 @@ header.small-header h1 {
 
 /* الفوتر */
 footer {
-  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 50%, #2d2d2d 100%);
+  background: var(--dark-bg);
+  backdrop-filter: blur(var(--blur-strength));
+  -webkit-backdrop-filter: blur(var(--blur-strength));
   padding: 60px 30px;
   text-align: center;
-  border-top: 3px solid #d4af37;
+  border-top: 3px solid var(--primary-gold);
   margin-top: 100px;
 }
 
