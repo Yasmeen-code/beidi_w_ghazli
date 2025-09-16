@@ -320,12 +320,14 @@ nav a:hover {
 
 .card {
   width: 280px;
-  background: linear-gradient(145deg, #333 0%, #444 100%);
+  background: var(--light-bg);
+  backdrop-filter: blur(var(--blur-strength));
+  -webkit-backdrop-filter: blur(var(--blur-strength));
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: all 0.4s ease;
-  border: 2px solid #d4af37;
+  border: 2px solid var(--primary-gold);
 }
 
 .card:hover {
