@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
 
+:root {
+  --primary-gold: #d4af37;
+  --secondary-gold: #b8860b;
+  --dark-bg: rgba(26, 26, 26, 0.8);
+  --darker-bg: rgba(45, 45, 45, 0.9);
+  --light-bg: rgba(255, 255, 255, 0.1);
+  --text-color: #fff;
+  --text-muted: #ccc;
+  --blur-strength: 10px;
+}
+
 body {
   font-family: "Cairo", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%);
   background-attachment: fixed;
-  color: #fff;
+  color: var(--text-color);
   line-height: 1.6;
   direction: rtl;
   min-height: 100vh;
