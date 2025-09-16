@@ -50,9 +50,11 @@ body::before {
 
 /* الهيدر الجديد */
 header {
-  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  background: var(--dark-bg);
+  backdrop-filter: blur(var(--blur-strength));
+  -webkit-backdrop-filter: blur(var(--blur-strength));
   padding: 20px 30px;
-  border-bottom: 3px solid #d4af37;
+  border-bottom: 3px solid var(--primary-gold);
   position: sticky;
   top: 0;
   z-index: 1000;
