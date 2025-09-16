@@ -1,23 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
 
-:root {
-  --primary-gold: #d4af37;
-  --secondary-gold: #b8860b;
-  --dark-bg: rgba(26, 26, 26, 0.8);
-  --darker-bg: rgba(45, 45, 45, 0.9);
-  --light-bg: rgba(255, 255, 255, 0.1);
-  --text-color: #fff;
-  --text-muted: #ccc;
-  --blur-strength: 10px;
-}
-
 body {
   font-family: "Cairo", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
   background-attachment: fixed;
-  color: var(--text-color);
+  color: #fff;
   line-height: 1.6;
   direction: rtl;
   min-height: 100vh;
@@ -52,12 +41,10 @@ body::before {
 
 /* هيدر صغير */
 header.small-header {
-  background: var(--dark-bg);
-  backdrop-filter: blur(var(--blur-strength));
-  -webkit-backdrop-filter: blur(var(--blur-strength));
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
   padding: 20px 30px;
   text-align: center;
-  border-bottom: 3px solid var(--primary-gold);
+  border-bottom: 3px solid #d4af37;
   box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
 }
 
@@ -138,14 +125,12 @@ header.small-header h1 {
 .details-info {
   flex: 1 1 40%;
   font-size: 1.3em;
-  background: var(--light-bg);
-  backdrop-filter: blur(var(--blur-strength));
-  -webkit-backdrop-filter: blur(var(--blur-strength));
+  background: linear-gradient(145deg, #333 0%, #444 100%);
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  color: var(--text-muted);
-  border: 2px solid var(--primary-gold);
+  color: #ccc;
+  border: 2px solid #d4af37;
 }
 
 .details-info p {
@@ -197,12 +182,10 @@ header.small-header h1 {
 
 /* الفوتر */
 footer {
-  background: var(--dark-bg);
-  backdrop-filter: blur(var(--blur-strength));
-  -webkit-backdrop-filter: blur(var(--blur-strength));
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 50%, #2d2d2d 100%);
   padding: 60px 30px;
   text-align: center;
-  border-top: 3px solid var(--primary-gold);
+  border-top: 3px solid #d4af37;
   margin-top: 100px;
 }
 

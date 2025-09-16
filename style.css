@@ -1,22 +1,11 @@
 /* إعدادات عامة */
-:root {
-  --primary-gold: #d4af37;
-  --secondary-gold: #b8860b;
-  --dark-bg: rgba(26, 26, 26, 0.8);
-  --darker-bg: rgba(45, 45, 45, 0.9);
-  --light-bg: rgba(255, 255, 255, 0.1);
-  --text-color: #fff;
-  --text-muted: #ccc;
-  --blur-strength: 10px;
-}
-
 body {
   font-family: "Cairo", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%);
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
   background-attachment: fixed;
-  color: var(--text-color);
+  color: #fff;
   direction: rtl;
   min-height: 100vh;
   position: relative;
@@ -31,17 +20,17 @@ body::before {
   height: 100%;
   background-image: radial-gradient(
       circle at 20% 80%,
-      rgba(212, 175, 55, 0.15) 0%,
+      rgba(212, 175, 55, 0.1) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 80% 20%,
-      rgba(212, 175, 55, 0.15) 0%,
+      rgba(212, 175, 55, 0.1) 0%,
       transparent 50%
     ),
     radial-gradient(
       circle at 40% 40%,
-      rgba(212, 175, 55, 0.1) 0%,
+      rgba(212, 175, 55, 0.05) 0%,
       transparent 50%
     );
   pointer-events: none;
@@ -50,11 +39,9 @@ body::before {
 
 /* الهيدر الجديد */
 header {
-  background: var(--dark-bg);
-  backdrop-filter: blur(var(--blur-strength));
-  -webkit-backdrop-filter: blur(var(--blur-strength));
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
   padding: 20px 30px;
-  border-bottom: 3px solid var(--primary-gold);
+  border-bottom: 3px solid #d4af37;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -191,9 +178,7 @@ nav a:hover {
   width: 280px;
   height: 320px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: var(--light-bg);
-  backdrop-filter: blur(var(--blur-strength));
-  -webkit-backdrop-filter: blur(var(--blur-strength));
+  background: linear-gradient(145deg, #333 0%, #444 100%);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease;
   position: relative;
@@ -203,7 +188,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border: 2px solid var(--primary-gold);
+  border: 2px solid #d4af37;
 }
 
 .product-card:nth-child(odd) {
@@ -320,14 +305,12 @@ nav a:hover {
 
 .card {
   width: 280px;
-  background: var(--light-bg);
-  backdrop-filter: blur(var(--blur-strength));
-  -webkit-backdrop-filter: blur(var(--blur-strength));
+  background: linear-gradient(145deg, #333 0%, #444 100%);
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: all 0.4s ease;
-  border: 2px solid var(--primary-gold);
+  border: 2px solid #d4af37;
 }
 
 .card:hover {
@@ -376,12 +359,10 @@ footer {
   min-width: 250px;
   margin: 20px;
   text-align: center;
-  background: var(--light-bg);
-  backdrop-filter: blur(var(--blur-strength));
-  -webkit-backdrop-filter: blur(var(--blur-strength));
+  background: linear-gradient(145deg, #333 0%, #444 100%);
   padding: 30px;
   border-radius: 20px;
-  border: 2px solid var(--primary-gold);
+  border: 2px solid #d4af37;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
