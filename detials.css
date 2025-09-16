@@ -136,12 +136,14 @@ header.small-header h1 {
 .details-info {
   flex: 1 1 40%;
   font-size: 1.3em;
-  background: linear-gradient(145deg, #333 0%, #444 100%);
+  background: var(--light-bg);
+  backdrop-filter: blur(var(--blur-strength));
+  -webkit-backdrop-filter: blur(var(--blur-strength));
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  color: #ccc;
-  border: 2px solid #d4af37;
+  color: var(--text-muted);
+  border: 2px solid var(--primary-gold);
 }
 
 .details-info p {
