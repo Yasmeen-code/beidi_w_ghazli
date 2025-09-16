@@ -191,7 +191,9 @@ nav a:hover {
   width: 280px;
   height: 320px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: linear-gradient(145deg, #333 0%, #444 100%);
+  background: var(--light-bg);
+  backdrop-filter: blur(var(--blur-strength));
+  -webkit-backdrop-filter: blur(var(--blur-strength));
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease;
   position: relative;
@@ -201,7 +203,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  border: 2px solid #d4af37;
+  border: 2px solid var(--primary-gold);
 }
 
 .product-card:nth-child(odd) {
